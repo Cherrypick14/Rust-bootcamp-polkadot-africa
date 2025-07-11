@@ -1,5 +1,6 @@
 use std::collections::BTreeMap;
 
+#[derive(Debug)]
 pub struct Pallet {
    balances: BTreeMap<String, u128>,
 }
@@ -53,6 +54,7 @@ fn init_balances(){
 
 }
 
+#[test]
 fn transfer_balance(){
     let mut balances = super::Pallet::new();
 
